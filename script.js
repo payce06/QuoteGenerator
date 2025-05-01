@@ -6,3 +6,14 @@ const quotes = [
     { quote: "Everything you can imagine is real.", author: "Pablo Picasso" },
     { quote: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" }
 ];
+
+const quoteText = document.getElementById('quote');
+const quoteAuthor = document.getElementById('author');
+const generateBtn = document.getElementById('generate');
+
+generateBtn.addEventListener('click', () => {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const selected = quotes[randomIndex];
+    quoteText.textContent =   `"${selected.quote}"`;
+    quoteAuthor.textContent = `- ${selec ted.author}`;
+});
