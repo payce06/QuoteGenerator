@@ -15,5 +15,5 @@ generateBtn.addEventListener('click', () => {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const selected = quotes[randomIndex];
     quoteText.textContent =   `"${selected.quote}"`;
-    quoteAuthor.textContent = `- ${selec ted.author}`;
+    quoteAuthor.textContent = `- ${selected.author}`;
 });
